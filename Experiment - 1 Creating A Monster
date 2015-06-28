@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">				
+<head>
+  <meta charse="utf-8">
+  <title>I'm Gonna Eat ........Cheeseburger!</title>
+  <style>
+    canvas{
+      border:10px solid gray;
+	  margin-top:100px;
+	  margin-left:400px;
+	  background:silver;
+    }
+  </style>
+  <script>
+    var canvas, ctx;
+    function init(){
+      canvas = document.querySelector("#myCanvas");
+      ctx = canvas.getContext("2d");
+      ctx.translate(50,50);
+	  drawMonster();
+    }
+    function drawMonster(x,y){
+													//Follow me on Twitter "@Naman_Sharma_25" For Stay Tuned with the latest updates.
+      //Head
+	  ctx.fillStyle = "purple";
+      ctx.fillRect(0,0,300,300);
+	  //Eyes
+	  ctx.fillStyle = "red";
+	  ctx.fillRect(60,50,20,20);
+	  ctx.fillRect(200,50,20,20);
+	  //Nose
+	  ctx.fillStyle = "green";
+	  ctx.fillRect(135,100,20,80);
+	  //Mouth
+	  ctx.fillStyle = "gold";
+	  ctx.fillRect(75,220,140,20);
+	  
+    }
+  </script>
+</head>
+<body onload="init();">											
+  <canvas id="myCanvas" width="400" height="400">
+    You are not enough brave to see me.
+  </canvas>
+</body>
+</html>
